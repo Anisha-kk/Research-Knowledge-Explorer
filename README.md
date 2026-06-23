@@ -1,6 +1,6 @@
 # AI/ML Research Knowledge Explorer
 ## Overview
-AI/ML Research Knowledge Explorer is an end-to-end Retrieval-Augmented Generation (RAG) system that enables exploring AI/ML research papers through a chat-based interface. The system automatically ingests research papers from academic sources, indexes them using vector embeddings, and enables conversational question-answering using LLM over both a global research corpus and user-uploaded documents.
+AI/ML Research Knowledge Explorer is an end-to-end Retrieval-Augmented Generation (RAG) based research assistant that enables exploring AI/ML research papers through a chat-based interface. The system automatically ingests research papers from academic sources, indexes them using vector embeddings, and enables conversational question-answering using LLM over both a global research corpus and user-uploaded documents.
 ## Input/Output
 **Input:** User query 
 <br>For example:
