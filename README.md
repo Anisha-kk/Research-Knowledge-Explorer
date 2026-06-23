@@ -1,12 +1,14 @@
 # AI/ML Research Knowledge Explorer
 ## Overview
-AI/ML Research Knowledge Explorer is an end-to-end Retrieval-Augmented Generation (RAG) system that enables summarizing and querying of AI/ML research papers through a chat-based interface. The system automatically ingests research papers from academic sources, indexes them using vector embeddings, and provides conversational question-answering using LLM over both a global research corpus and user-uploaded documents.
+AI/ML Research Knowledge Explorer is an end-to-end Retrieval-Augmented Generation (RAG) system that enables exploring AI/ML research papers through a chat-based interface. The system automatically ingests research papers from academic sources, indexes them using vector embeddings, and enables conversational question-answering using LLM over both a global research corpus and user-uploaded documents.
 ## Input/Output
 **Input:** User query 
-For example: “Define backpropagation”, “Summarize the paper on attention”
-The system supports 2 input modes:
+<br>For example:
+<br>“Define backpropagation”, “Summarize the paper on attention”
+<br>The system supports 2 input modes:
 1. Global: User can query the system to which the system gives response from a curated research corpus
-2. Upload: User can upload a research paper and can query the system based on it
+2. Upload: User can upload a research paper and can ask questions based on it.
+   
 **Output:** The response from the system
 ## Algorithm
 1. Creating Global Corpus
@@ -14,7 +16,6 @@ The system supports 2 input modes:
      - Title
      - Year of publication
      - Topic
-
    - Run the ingestion pipeline:
      1. Search paper in OpenAlex
      2. Download metadata and publication details
@@ -27,7 +28,6 @@ The system supports 2 input modes:
      9. Store vectors in FAISS
 
 2. Retrieval Process During Query Time
-
    - Global Mode:
      1. User enters a query
      2. Query is converted into embeddings
@@ -35,9 +35,7 @@ The system supports 2 input modes:
      4. Top-K relevant chunks are retrieved
      5. Context is built using retrieved chunks
      6. Context is passed to the LLM with prompt
-        - If the query contains the term "summarize", it is explicitly added to the prompt
      7. LLM generates and returns the response
-
    - Upload Mode:
      1. User uploads a PDF file
      2. File is extracted, chunked, embedded, and stored in a separate FAISS vector store
@@ -47,7 +45,6 @@ The system supports 2 input modes:
      6. Top-K relevant chunks are retrieved
      7. Context is built using retrieved chunks
      8. Context is passed to the LLM with prompt
-        - If the query contains the term "summarize", it is explicitly added to the prompt
      9. LLM generates and returns the response
 
 ## Tech Stack
