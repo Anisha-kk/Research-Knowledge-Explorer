@@ -131,7 +131,8 @@ A test paper was indexed and stored in vector store for evaluating system perfor
 |MRR	| 1.0	| The most relevant chunk was always the top-ranked result. |
 
 For user-uploaded research papers, the FAISS-based retrieval system achieved perfect retrieval effectiveness, with Recall@5 = 1.0, MRR = 1.0, NDCG@10 = 1.0, and Hit Rate@5 = 1.0, demonstrating that relevant document chunks were consistently retrieved and ranked first. Precision@5 of 0.20 indicates that additional non-relevant chunks were included in the retrieved set, prioritizing retrieval coverage over aggressive filtering.<br>
-Due to computational constraints of local CPU-only evaluation, retrieval quality was assessed using standard Information Retrieval metrics (Hit@K, Precision@K, Recall@K, MRR, Hit Rate and NDCG) instead of large-scale LLM-based faithfulness evaluation.
+
+Due to computational constraints of local CPU-only evaluation, retrieval quality was assessed only using standard Information Retrieval metrics (Hit@K, Precision@K, Recall@K, MRR, Hit Rate and NDCG) instead of large-scale LLM-based faithfulness evaluation.
 
 ## Examples
 Home page:
