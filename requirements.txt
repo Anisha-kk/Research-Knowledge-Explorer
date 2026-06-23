@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+chromadb
+pymupdf
+pandas
+numpy
+ragas
+ollama
+requests
+pytz
+feedparser

@@ -1,0 +1,18 @@
+__pycache__/
+venv/
+data/backup
+data/index
+data/state.json
+data/papers
+evaluation/adversarial
+evaluation/results
+evaluation/standard
+evaluation/test_upload_paper_index_builder
+hf_cache/
+important docs/
+logger/
+logs/
+old codes/
+scripts/rag_eval_metrics.txt
+config.py 
+
